@@ -16,7 +16,7 @@ class School
   end
   def grade(num)
     students = []
-    @roster.each do |key, value|
+    @roster.map do |key, value|
       if num == key
         students << value
         students
