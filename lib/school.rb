@@ -20,10 +20,12 @@ class School
     end
   end
   def sort 
-    @roster.each do |key, value |
-
-      value.sort
+  to_return = {}
+    @roster.each do |key, value|
+      to_return[key] = value.sort
+      
     end
+    return to_return
   end
   
 end
