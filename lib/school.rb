@@ -4,8 +4,8 @@ class School
     @school_name = school_name
     @roster = roster
   end 
+  
   def add_student(name, grade)
-    
     if @roster.key?(grade)
     @roster[grade] << name
     else
@@ -13,5 +13,11 @@ class School
     name_array << name
     @roster[grade] = name_array
     end
+  end
+  def grade(num)
+    students = []
+    @roster.each do |key, value|
+      if key == num
+        students << value
   end
 end
