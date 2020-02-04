@@ -10,8 +10,11 @@ class School
     if @roster.empty?
     @roster[grade] = name_array
   else
-    if @roster.key?(grade)
-      
+  if @roster.key?(grade)
+    @roster[grade] = name_array << name
+    else
+    @roster[grade] = name_array
+    end
   end
   end
 end
