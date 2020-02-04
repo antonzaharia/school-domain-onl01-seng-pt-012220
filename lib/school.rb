@@ -20,5 +20,6 @@ class School
       if key == num
         students << value
       end
+    end
   end
 end
