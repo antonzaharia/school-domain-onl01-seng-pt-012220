@@ -11,7 +11,7 @@ class School
     @roster[grade] = name_array
   else
   if @roster.key?(grade)
-    @roster[grade] = name_array << name
+    @roster[grade] = name_array + name
     else
     @roster[grade] = name_array
     end
