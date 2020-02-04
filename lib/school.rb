@@ -17,7 +17,5 @@ class School
   def grade(num)
     if @roster.key?(num)
       @roster[num]
-    end
-    students
   end
 end
