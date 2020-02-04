@@ -7,14 +7,10 @@ class School
   def add_student(name, grade)
     name_array = []
     name_array << name
-    if @roster.empty?
+    if !@roster.key?(grade)
     @roster[grade] = name_array
-  else
-  if @roster.key?(grade)
-    @roster[grade] = name_array + name
     else
-    @roster[grade] = name_array
+    @roster[grade] = name_array << name
     end
-  end
   end
 end
