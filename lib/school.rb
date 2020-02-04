@@ -4,13 +4,14 @@ class School
     @school_name = school_name
     @roster = roster
   end 
-  def add_student(name, grade)
+def add_student(name, grade)
+    
+    if @roster.key?(grade)
+    @roster[grade] << name
+    else
     name_array = []
     name_array << name
-    if !@roster.key?(grade)
     @roster[grade] = name_array
-    else
-    @roster[grade] = name_array << name
     end
   end
 end
