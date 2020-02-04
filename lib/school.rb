@@ -21,7 +21,8 @@ class School
   end
   def sort 
     @roster.each_value do |value|
-      value.sort { |a, b| a <=> b } 
+      value.sort
+      value
     end
   end
   
