@@ -20,7 +20,9 @@ class School
     end
   end
   def sort 
-    
+    @roster.each_value do |value|
+      
+    end
   end
   
 end
