@@ -19,5 +19,6 @@ class School
     @roster.each do |key, value|
       if key == num
         students << value
+      end
   end
 end
