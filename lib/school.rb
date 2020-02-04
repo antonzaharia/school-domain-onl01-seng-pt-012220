@@ -16,7 +16,7 @@ class School
   end
   def grade(num)
     students = []
-    if @roster[key] == num
+    if @roster[num].
       students << num
     end
     students
